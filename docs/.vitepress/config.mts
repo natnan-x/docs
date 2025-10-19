@@ -14,6 +14,15 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: "基础篇",
+        items: [
+          { text: "HTML5", link: "views/base/html" },
+          { text: "CSS3", link: "views/base/css" },
+          { text: "ES6 - Array", link: "views/base/array" },
+          { text: "ES6 - Object", link: "views/base/object" },
+        ],
+      },
+      {
         text: "Examples",
         items: [
           { text: "Markdown Examples", link: "/markdown-examples" },
