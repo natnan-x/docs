@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.hx-odK46.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"base/html.md","filePath":"base/html.md"}'),s={name:"base/html.md"};function r(o,c,n,m,l,p){return a(),t("div")}const i=e(s,[["render",r]]);export{d as __pageData,i as default};
