@@ -15,8 +15,11 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
-    link: /markdown-examples
+  - title: 基础篇
+    link: /base/html
+    details: 这里集中汇总HTML、CSS、JS相关知识点。
+  - title: 前端导航
+    link: /base/html
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -26,6 +29,7 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature D
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature D
+  - title: 前端导航
+    link: /base/html
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---

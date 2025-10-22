@@ -5,82 +5,7 @@
 
 适用于实际项目开发与前端面试准备。
 
----
-
-## 一、破坏性方法（Mutating Methods）
-
-这些方法会 **直接修改原对象**，在 Vue、React 等响应式框架中使用时要谨慎。
-
----
-
-### 1. 增改类
-
-#### `Object.assign(target, source)`
-
-- **功能**：将一个或多个源对象的属性复制到目标对象。
-- **返回值**：被修改后的目标对象。
-- **使用场景**：对象合并、配置覆盖。
-
-```js
-const defaultConfig = { theme: "light", lang: "zh" };
-const userConfig = { theme: "dark" };
-
-Object.assign(defaultConfig, userConfig);
-console.log(defaultConfig);
-// { theme: 'dark', lang: 'zh' }
-```
-
-### 2. 删除类
-
-#### `delete`
-
-- **功能**：删除对象中的某个属性。
-- **使用场景**：删除敏感字段或临时属性。
-
-```js
-const user = { name: "Tom", password: "123456" };
-delete user.password;
-console.log(user); // { name: 'Tom' }
-```
-
-::: danger ⚠️ 注意
-此操作会修改 defaultConfig。
-:::
-
-### 3. 定义属性类
-
-#### `Object.defineProperty(obj, key, descriptor)`
-
-- **功能**：定义或修改对象的属性（可控制可写性、可枚举性等）。
-- **使用场景**：底层框架设计、响应式系统（如 Vue2 的依赖追踪）。
-
-```js
-const user = {};
-Object.defineProperty(user, "name", {
-  value: "Tom",
-  writable: false,
-  enumerable: true,
-});
-console.log(user.name); // 'Tom'
-user.name = "Jerry"; // 无效
-```
-
-#### `Object.defineProperties(obj, descriptors)`
-
-- **功能**：批量定义多个属性。
-- **使用场景**：初始化带有描述符的大对象。
-
-```js
-const user = {};
-Object.defineProperties(user, {
-  name: { value: "Tom", writable: true },
-  age: { value: 25, writable: false },
-});
-```
-
----
-
-## 二、非破坏性方法（Non-Mutating Methods）
+## 一、非破坏性方法（Non-Mutating Methods）
 
 这些方法会 **不会修改原对象**，而是返回新的对象或信息。推荐在项目中优先使用。
 
@@ -256,6 +181,79 @@ Object.getOwnPropertyDescriptor(user, "name");
 const obj = { name: "Tom" };
 Object.getOwnPropertyDescriptors(obj);
 ```
+
+## 二、破坏性方法（Mutating Methods）
+
+这些方法会 **直接修改原对象**，在 Vue、React 等响应式框架中使用时要谨慎。
+
+---
+
+### 1. 增改类
+
+#### `Object.assign(target, source)`
+
+- **功能**：将一个或多个源对象的属性复制到目标对象。
+- **返回值**：被修改后的目标对象。
+- **使用场景**：对象合并、配置覆盖。
+
+```js
+const defaultConfig = { theme: "light", lang: "zh" };
+const userConfig = { theme: "dark" };
+
+Object.assign(defaultConfig, userConfig);
+console.log(defaultConfig);
+// { theme: 'dark', lang: 'zh' }
+```
+
+### 2. 删除类
+
+#### `delete`
+
+- **功能**：删除对象中的某个属性。
+- **使用场景**：删除敏感字段或临时属性。
+
+```js
+const user = { name: "Tom", password: "123456" };
+delete user.password;
+console.log(user); // { name: 'Tom' }
+```
+
+::: danger ⚠️ 注意
+此操作会修改 defaultConfig。
+:::
+
+### 3. 定义属性类
+
+#### `Object.defineProperty(obj, key, descriptor)`
+
+- **功能**：定义或修改对象的属性（可控制可写性、可枚举性等）。
+- **使用场景**：底层框架设计、响应式系统（如 Vue2 的依赖追踪）。
+
+```js
+const user = {};
+Object.defineProperty(user, "name", {
+  value: "Tom",
+  writable: false,
+  enumerable: true,
+});
+console.log(user.name); // 'Tom'
+user.name = "Jerry"; // 无效
+```
+
+#### `Object.defineProperties(obj, descriptors)`
+
+- **功能**：批量定义多个属性。
+- **使用场景**：初始化带有描述符的大对象。
+
+```js
+const user = {};
+Object.defineProperties(user, {
+  name: { value: "Tom", writable: true },
+  age: { value: 25, writable: false },
+});
+```
+
+---
 
 ## 三、面试常见考点总结
 
