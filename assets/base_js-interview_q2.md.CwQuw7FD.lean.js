@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./chunks/framework.hx-odK46.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"base/js-interview/q2.md","filePath":"base/js-interview/q2.md"}'),s={name:"base/js-interview/q2.md"};function r(n,o,i,c,p,_){return a(),t("div")}const f=e(s,[["render",r]]);export{m as __pageData,f as default};
