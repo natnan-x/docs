@@ -1,0 +1,1 @@
+import{_ as e,c as s,o as t}from"./chunks/framework.hx-odK46.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"base/css/box.md","filePath":"base/css/box.md"}'),a={name:"base/css/box.md"};function o(c,r,n,p,_,d){return t(),s("div")}const f=e(a,[["render",o]]);export{m as __pageData,f as default};

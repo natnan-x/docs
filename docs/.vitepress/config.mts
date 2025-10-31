@@ -1,87 +1,54 @@
-import { defineConfig } from "vitepress";
+import { defineConfig } from 'vitepress';
+import * as fs from 'node:fs';
+import * as path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-// https://vitepress.dev/reference/site-config
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// 读取 sidebar 配置
+const sidebarConfig = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, 'sidebar.config.json'), 'utf-8')
+);
+
+// 根据 JSON 配置生成最终 sidebar
+function buildSidebar(items: any[], basePath = ''): any[] {
+  return items.map((item) => {
+    const dirPath = path.posix.join(basePath, item.dir || '');
+    const newItem: any = { text: item.text };
+
+    if (item.collapsed !== undefined) newItem.collapsed = item.collapsed;
+
+    if (item.items) {
+      newItem.items = buildSidebar(item.items, dirPath);
+    } else {
+      // 单文件
+      const linkPath = path.posix.join('/', dirPath, item.file || '');
+      newItem.link = linkPath;
+    }
+
+    return newItem;
+  });
+}
+
+// 最终 sidebar 对象
+const sidebar: Record<string, any> = {};
+for (const key in sidebarConfig) {
+  sidebar[key] = buildSidebar(sidebarConfig[key]);
+}
+
 export default defineConfig({
-  title: "前端开发手记",
-  description: "A VitePress Site",
-  base: "/docs/",
+  title: '前端开发手记',
+  description: 'A VitePress Site',
+  base: '/docs/',
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
+      { text: 'Home', link: '/' },
+      { text: 'Examples', link: '/markdown-examples' },
     ],
-
-    sidebar: {
-      // Base 模块的侧边栏
-      "/base/": [
-        {
-          text: "JavaScript",
-          collapsed: false,
-          items: [
-            { text: "原型链", link: "/base/js-prototype" },
-            { text: "数据类型", link: "/base/js-type" },
-            { text: "数组方法", link: "/base/js-array" },
-            { text: "对象方法", link: "/base/js-object" },
-            { text: "正则表达式", link: "/base/js-regex" },
-            // 新增面试题分组
-            {
-              text: "面试题",
-              collapsed: false,
-              items: [
-                {
-                  text: "1.如何判断元素的变化",
-                  link: "/base/js-interview/q1",
-                },
-                { text: "2.说说你对闭包的理解", link: "/base/js-interview/q2" },
-                { text: "问题3", link: "/base/js-interview/question3" },
-              ],
-            },
-          ],
-        },
-
-        {
-          text: "HTML",
-          collapsed: true,
-          items: [
-            { text: "原型链", link: "/base/" },
-            { text: "数组vs对象", link: "/base/guide" },
-          ],
-        },
-        {
-          text: "CSS",
-          collapsed: true,
-          items: [
-            { text: "原型链", link: "/base/" },
-            { text: "数组vs对象", link: "/base/guide" },
-          ],
-        },
-      ],
-
-      // React 模块的侧边栏
-      "/react/": [
-        {
-          text: "React 教程",
-          collapsed: false,
-          items: [
-            { text: "简介", link: "/react/" },
-            { text: "Hooks", link: "/react/hooks" },
-            { text: "组件", link: "/react/component" },
-          ],
-        },
-      ],
-
-      // 默认（匹配不到上面路径时使用）
-      "/": [
-        {
-          text: "首页",
-          items: [{ text: "开始使用", link: "/" }],
-        },
-      ],
-    },
-
+    sidebar,
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
     ],
   },
 });

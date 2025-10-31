@@ -1,0 +1,132 @@
+{
+  "/base/": [
+    {
+      "text": "JavaScript",
+      "collapsed": false,
+      "dir": "base",
+      "items": [
+        {
+          "file": "js-prototype",
+          "text": "原型链"
+        },
+        {
+          "file": "js-type",
+          "text": "数据类型"
+        },
+        {
+          "file": "js-array",
+          "text": "数组方法"
+        },
+        {
+          "file": "js-object",
+          "text": "对象方法"
+        },
+        {
+          "file": "js-regex",
+          "text": "正则表达式"
+        },
+        {
+          "text": "面试题",
+          "collapsed": false,
+          "dir": "js-interview",
+          "items": [
+            {
+              "file": "q1",
+              "text": "1.判断元素的变化"
+            },
+            {
+              "file": "q2",
+              "text": "2.闭包"
+            },
+            {
+              "file": "q3",
+              "text": "3.ES6/ES7/ES8的新特性"
+            },
+            {
+              "file": "q4",
+              "text": "4.Proxy vs defineProperty"
+            },
+            {
+              "file": "q5",
+              "text": "5.AJAX、Fetch、Axios"
+            },
+            {
+              "file": "q6",
+              "text": "6.js脚本延迟加载方式"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "HTML",
+      "collapsed": true,
+      "dir": "base",
+      "items": [
+        {
+          "file": "",
+          "text": "原型链"
+        },
+        {
+          "file": "guide",
+          "text": "数组vs对象"
+        }
+      ]
+    },
+    {
+      "text": "CSS",
+      "collapsed": true,
+      "dir": "base/css",
+      "items": [
+        {
+          "file": "selector",
+          "text": "选择器"
+        },
+        {
+          "file": "box",
+          "text": "盒模型"
+        },
+        {
+          "file": "transition",
+          "text": "transition 和 animation"
+        },
+        {
+          "file": "engineering",
+          "text": "CSS工程化"
+        }
+      ]
+    }
+  ],
+  "/react/": [
+    {
+      "text": "React 教程",
+      "collapsed": false,
+      "dir": "react",
+      "items": [
+        {
+          "file": "",
+          "text": "简介"
+        },
+        {
+          "file": "hooks",
+          "text": "Hooks"
+        },
+        {
+          "file": "component",
+          "text": "组件"
+        }
+      ]
+    }
+  ],
+  "/": [
+    {
+      "text": "首页",
+      "items": [
+        {
+          "file": "",
+          "text": "开始使用"
+        }
+      ]
+    }
+  ]
+}
