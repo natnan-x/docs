@@ -69,15 +69,19 @@
     {
       "text": "HTML",
       "collapsed": true,
-      "dir": "base",
+      "dir": "base/html",
       "items": [
         {
-          "file": "",
-          "text": "原型链"
+          "file": "语义化",
+          "text": "语义化标签"
         },
         {
-          "file": "guide",
-          "text": "数组vs对象"
+          "file": "html5",
+          "text": "HTML5新特性"
+        },
+        {
+          "file": "meta",
+          "text": "HTML meta标签"
         }
       ]
     },
@@ -114,6 +118,10 @@
         {
           "file": "MVVM",
           "text": "MVM、MVP、MVVM"
+        },
+        {
+          "file": "底层原理",
+          "text": "Vue2/3底层原理"
         }
       ]
     },
