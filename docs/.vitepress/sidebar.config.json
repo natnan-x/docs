@@ -111,7 +111,7 @@
   ],
   "/vue/": [
     {
-      "text": "写在前面",
+      "text": "原理篇",
       "collapsed": true,
       "dir": "vue/pack",
       "items": [
@@ -121,18 +121,107 @@
         },
         {
           "file": "底层原理",
-          "text": "Vue2/3底层原理"
+          "text": "Diff、响应式原理"
+        },
+        {
+          "file": "单、双向数据流",
+          "text": "单向与双向数据流"
+        },
+        {
+          "file": "生命周期",
+          "text": "生命周期详解"
+        },
+        {
+          "file": "命名规范",
+          "text": "Vue组件命名规范"
         }
       ]
     },
     {
-      "text": "写在前面",
+      "text": "基础篇",
       "collapsed": false,
       "dir": "vue/base",
       "items": [
         {
-          "file": "all",
+          "file": "other",
           "text": "基础汇总"
+        },
+        {
+          "file": "父子组件",
+          "text": "父子组件传值"
+        },
+        {
+          "file": "指令",
+          "text": "Vue指令"
+        },
+        {
+          "file": "修饰符",
+          "text": "Vue修饰符"
+        }
+      ]
+    },
+    {
+      "text": "生态篇",
+      "collapsed": false,
+      "dir": "vue/ecology",
+      "items": [
+        {
+          "text": "Vue Router",
+          "collapsed": false,
+          "dir": "router",
+          "items": [
+            {
+              "file": "base",
+              "text": "路由基础"
+            },
+            {
+              "file": "实现原理",
+              "text": "实现原理"
+            },
+            {
+              "file": "导航解析",
+              "text": "导航解析"
+            },
+            {
+              "file": "路由守卫",
+              "text": "路由守卫"
+            },
+            {
+              "file": "动态路由",
+              "text": "动态路由"
+            },
+            {
+              "file": "路由懒加载",
+              "text": "路由懒加载"
+            },
+            {
+              "file": "路由跳转",
+              "text": "路由跳转"
+            },
+            {
+              "file": "hash与history模式",
+              "text": "hash模式与history模式"
+            },
+            {
+              "file": "面试常见题",
+              "text": "[面试常见题]"
+            }
+          ]
+        },
+        {
+          "text": "状态管理",
+          "collapsed": false,
+          "dir": "状态管理",
+          "items": [
+            {
+              "file": "vuex",
+              "text": "vuex"
+            },
+            {
+              "file": "pinia",
+              "text": "pinia"
+            }
+          ]
         }
       ]
     }
