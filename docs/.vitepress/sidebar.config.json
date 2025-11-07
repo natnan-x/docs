@@ -1,9 +1,51 @@
 {
   "/base/": [
     {
+      "text": "HTML",
+      "collapsed": false,
+      "dir": "base/html",
+      "items": [
+        {
+          "file": "语义化",
+          "text": "语义化标签"
+        },
+        {
+          "file": "html5",
+          "text": "HTML5新特性"
+        },
+        {
+          "file": "meta",
+          "text": "HTML meta标签"
+        }
+      ]
+    },
+    {
+      "text": "CSS",
+      "collapsed": false,
+      "dir": "base/css",
+      "items": [
+        {
+          "file": "selector",
+          "text": "选择器"
+        },
+        {
+          "file": "box",
+          "text": "盒模型"
+        },
+        {
+          "file": "transition",
+          "text": "transition 和 animation"
+        },
+        {
+          "file": "engineering",
+          "text": "CSS工程化"
+        }
+      ]
+    },
+    {
       "text": "JavaScript",
       "collapsed": false,
-      "dir": "base",
+      "dir": "base/js",
       "items": [
         {
           "file": "js-prototype",
@@ -28,7 +70,7 @@
         {
           "text": "面试题",
           "collapsed": false,
-          "dir": "js-interview",
+          "dir": "interview",
           "items": [
             {
               "file": "q1",
@@ -65,54 +107,12 @@
           ]
         }
       ]
-    },
-    {
-      "text": "HTML",
-      "collapsed": true,
-      "dir": "base/html",
-      "items": [
-        {
-          "file": "语义化",
-          "text": "语义化标签"
-        },
-        {
-          "file": "html5",
-          "text": "HTML5新特性"
-        },
-        {
-          "file": "meta",
-          "text": "HTML meta标签"
-        }
-      ]
-    },
-    {
-      "text": "CSS",
-      "collapsed": true,
-      "dir": "base/css",
-      "items": [
-        {
-          "file": "selector",
-          "text": "选择器"
-        },
-        {
-          "file": "box",
-          "text": "盒模型"
-        },
-        {
-          "file": "transition",
-          "text": "transition 和 animation"
-        },
-        {
-          "file": "engineering",
-          "text": "CSS工程化"
-        }
-      ]
     }
   ],
   "/vue/": [
     {
       "text": "原理篇",
-      "collapsed": true,
+      "collapsed": false,
       "dir": "vue/pack",
       "items": [
         {

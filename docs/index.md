@@ -16,20 +16,12 @@ hero:
 
 features:
   - title: 基础篇
-    link: /base/html
+    link: /base/html/html5
     details: 这里集中汇总HTML、CSS、JS相关知识点。
   - title: Vue
     link: /vue/pack/MVVM
     details: 摘取Vue2/3、Vite、Router、状态管理等重点。
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature D
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature D
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: 前端导航
-    link: /base/html
+    link: /other/前端导航
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
