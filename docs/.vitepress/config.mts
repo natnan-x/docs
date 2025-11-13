@@ -1,3 +1,9 @@
+/*
+ * @Author: NanNan
+ * @Date: 2025-10-19 16:34:28
+ * @LastEditTime: 2025-11-12 14:58:02
+ * @Description:
+ */
 import { defineConfig } from 'vitepress';
 import * as fs from 'node:fs';
 import * as path from 'node:path';
@@ -39,16 +45,27 @@ for (const key in sidebarConfig) {
 
 export default defineConfig({
   title: '前端开发手记',
-  description: 'A VitePress Site',
+  titleTemplate: ':title - NatNan Docs', // 页面有title时的模板
+  description: 'Docs from NatNan',
   base: '/docs/',
+  lastUpdated: true,
   themeConfig: {
+    // 模糊搜索开启
+    search: {
+      provider: 'local',
+    },
+    // 头部导航配置
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
+      { text: '首页', link: '/' },
+      { text: '示例', link: '/demo' },
     ],
+    // footer
+    footer: {
+      message: 'NatNan Front-End Docs.',
+      copyright: 'Copyright © 2015-present Nat Nan',
+    },
+    // 侧边栏配置
     sidebar,
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/natnan-x' }],
   },
 });

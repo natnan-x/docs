@@ -109,6 +109,19 @@
       ]
     }
   ],
+  "/ts/": [
+    {
+      "text": "基础",
+      "collapsed": false,
+      "dir": "ts/base",
+      "items": [
+        {
+          "file": "base",
+          "text": "基础知识点"
+        }
+      ]
+    }
+  ],
   "/vue/": [
     {
       "text": "原理篇",
@@ -243,6 +256,23 @@
         {
           "file": "component",
           "text": "组件"
+        }
+      ]
+    }
+  ],
+  "/other/": [
+    {
+      "text": "导航",
+      "collapsed": false,
+      "dir": "other",
+      "items": [
+        {
+          "file": "官网导航",
+          "text": "官网导航"
+        },
+        {
+          "file": "网站欣赏",
+          "text": "网站欣赏"
         }
       ]
     }

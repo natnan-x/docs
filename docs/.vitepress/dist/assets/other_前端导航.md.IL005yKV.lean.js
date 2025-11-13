@@ -1,1 +1,0 @@
-import{_ as r,c as a,o as t,af as l}from"./chunks/framework.hx-odK46.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"other/前端导航.md","filePath":"other/前端导航.md"}'),n={name:"other/前端导航.md"};function i(s,e,h,o,c,f){return t(),a("div",null,[...e[0]||(e[0]=[l("",8)])])}const g=r(n,[["render",i]]);export{_ as __pageData,g as default};
