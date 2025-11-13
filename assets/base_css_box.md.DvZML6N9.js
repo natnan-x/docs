@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as s}from"./chunks/framework.D_x7hp0y.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"base/css/box.md","filePath":"base/css/box.md","lastUpdated":1763048741000}'),a={name:"base/css/box.md"};function o(c,r,n,d,p,_){return s(),t("div")}const f=e(a,[["render",o]]);export{m as __pageData,f as default};
