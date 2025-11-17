@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.D_x7hp0y.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ts/base/函数-函数重载.md","filePath":"ts/base/函数-函数重载.md","lastUpdated":1763384180000}'),s={name:"ts/base/函数-函数重载.md"};function r(_,o,c,n,d,p){return a(),t("div")}const f=e(s,[["render",r]]);export{m as __pageData,f as default};
