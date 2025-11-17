@@ -116,6 +116,48 @@
       "dir": "ts/base",
       "items": [
         {
+          "file": "三种核心类型",
+          "text": "1.三种核心类型"
+        },
+        {
+          "file": "数组vs元祖",
+          "text": "2.数组vs元祖"
+        },
+        {
+          "file": "any和unknow",
+          "text": "3.any vs unknow"
+        },
+        {
+          "file": "函数",
+          "text": "4.函数",
+          "items": [
+            {
+              "file": "函数",
+              "text": "4.1 基础写法"
+            },
+            {
+              "file": "函数-剩余参数与this",
+              "text": "4.2 剩余参数与this"
+            },
+            {
+              "file": "函数-函数重载",
+              "text": "4.3 函数重载"
+            }
+          ]
+        },
+        {
+          "file": "枚举",
+          "text": "5.枚举"
+        },
+        {
+          "file": "类型别名",
+          "text": "6.类型别名"
+        },
+        {
+          "file": "接口",
+          "text": "6.接口（interface）"
+        },
+        {
           "file": "base",
           "text": "基础知识点"
         }

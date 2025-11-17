@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.D_x7hp0y.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ts/base/函数.md","filePath":"ts/base/函数.md","lastUpdated":null}'),s={name:"ts/base/函数.md"};function r(o,n,c,_,d,p){return a(),t("div")}const m=e(s,[["render",r]]);export{l as __pageData,m as default};

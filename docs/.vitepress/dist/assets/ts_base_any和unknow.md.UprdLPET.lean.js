@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.D_x7hp0y.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ts/base/any和unknow.md","filePath":"ts/base/any和unknow.md","lastUpdated":null}'),n={name:"ts/base/any和unknow.md"};function s(o,r,c,d,p,_){return a(),t("div")}const m=e(n,[["render",s]]);export{l as __pageData,m as default};
