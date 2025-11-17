@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.D_x7hp0y.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ts/base/类型别名.md","filePath":"ts/base/类型别名.md","lastUpdated":1763368640000}'),s={name:"ts/base/类型别名.md"};function r(o,c,n,_,d,p){return a(),t("div")}const f=e(s,[["render",r]]);export{m as __pageData,f as default};

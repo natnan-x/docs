@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./chunks/framework.D_x7hp0y.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ts/base/三种核心类型.md","filePath":"ts/base/三种核心类型.md","lastUpdated":null}'),s={name:"ts/base/三种核心类型.md"};function r(o,_,n,c,d,p){return a(),t("div")}const m=e(s,[["render",r]]);export{l as __pageData,m as default};
